@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denis Bušek | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-white backdrop-blur-md">
+  <!-- Header -->
+  <header class="backdrop-blur-md bg-white/10 border-b border-white/20 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Denis Bušek</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">O mně</a>
+        <a href="#projects" class="hover:underline">Projekty</a>
+        <a href="#contact" class="hover:underline">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex items-center justify-center h-screen">
+    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-10 max-w-2xl shadow-2xl border border-white/20">
+      <h2 class="text-4xl font-bold mb-4">Ahoj, já jsem Denis 👋</h2>
+      <p class="text-lg">Jsem 15letý programátor z ČR, který má za sebou přes 50 projektů. Specializuji se na web, AI a kreativní nápady!</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-white/10 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">O mně</h3>
+      <p class="text-lg">Jmenuji se Denis Bušek, studuji programování už 5 let. Pracuji na projektech s AI, weby, mobilními aplikacemi a e-shopy.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Projekty</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Card -->
+        <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20 shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">AI Web Editor</h4>
+          <p>Kódovací editor s AI pomocí Gemini API. Chat, čtení kódu a implementace návrhů.</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20 shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">DJ pult</h4>
+          <p>Interaktivní DJ pult s waveformy, scratch efekty a BPM detekcí.</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/20 shadow-lg hover:scale-105 transition">
+          <h4 class="text-xl font-semibold mb-2">Fitness Aplikace</h4>
+          <p>Sledování planku a pokroku přes Sketchware Pro. Uložení a grafy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-white/10 backdrop-blur-sm">
+    <div class="max-w-xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Kontakt</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Tvé jméno" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60" />
+        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60" />
+        <textarea rows="4" placeholder="Zpráva" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60"></textarea>
+        <button type="submit" class="bg-white/20 border border-white/30 hover:bg-white/30 transition px-6 py-3 rounded-full">Odeslat</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-white/70">
+    © 2025 Denis Bušek — <a href="https://heexy.org" class="underline">Heexy.org</a>
+  </footer>
+</body>
+</html>
